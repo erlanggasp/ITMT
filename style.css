@@ -20,10 +20,18 @@ body {
 
 }
 
+.logo {
+    margin-left: 20px;
+}
+.title {
+    width: 90%;
+    margin: auto;
+}
+
 .navbar .menu  {
    display: flex;
    justify-content: space-between;
-   width: 300px;
+   margin-right: 20px;
    
 }
 
@@ -51,12 +59,22 @@ body {
 
 .flex-container {
     display: flex;
-    background-color: white;
-    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
 }
 
 .flex-container div {
-   width: 12%;
+    width: 12%;
+    border:black solid 2px  ;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 18px;
+   
+}
+.flex-container div img {
+    width: 100%;
 }
 
 .flex-container > div:hover {
@@ -64,3 +82,14 @@ body {
     border-radius: 18px;
 }
 
+@media only screen and (max-width: 800px) {
+    .flex-container div {
+        width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .flex-container div {
+        width: 60%;
+    }
+  }
